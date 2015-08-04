@@ -21,13 +21,13 @@ body {
 .splash-header{
 	font-family: hollywood;
 	margin-top: 10vh;
-	font-size: 6vw;
+	font-size: 10vh;
 }
 
 .splash-text {
 	position: relative;
 	margin-top: 10vh;
-	font-size: 2vw;
+	font-size: 3vh;
 }
 
 
