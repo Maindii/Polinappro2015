@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    anchors: ['yleista', 'liput', 'aikataulu', 'kartta', 'muuta'],
+    anchors: ['splash', 'yleista', 'liput', 'aikataulu', 'kartta', 'muuta'],
     menu: '#munMenu'
   });
 });
