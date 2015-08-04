@@ -21,13 +21,13 @@ body {
 .splash-header{
 	font-family: hollywood;
 	margin-top: 10vh;
-	font-size: 100px;
+	font-size: 6vw;
 }
 
 .splash-text {
 	position: relative;
 	margin-top: 10vh;
-	font-size: 25px;
+	font-size: 2vw;
 }
 
 
@@ -40,7 +40,7 @@ body {
 .arrow {
 	position: relative;
 	margin-top: 15vh;
-	font-size: 50px;
+	font-size: 2vw;
   	color: inherit;
   	text-decoration: inherit;
 
