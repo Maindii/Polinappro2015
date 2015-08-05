@@ -63,29 +63,49 @@ body {
 
 
 .light1 {
+	width:120vw;
 	position: absolute;
-	bottom: -20%;
-	right: 25%;
+	bottom: -10%;
+	right: 9%;
 	z-index: 2;
+	transform-origin: 90% 85%;
 }
 
 .light2 {
+	width:120vw;
 	position: absolute;
-	bottom: -23%;
-	right: 17%;
+	bottom: -6%;
+	right: 5%;
 	z-index: 3;
 	transform-origin: 90% 85%;
-	-webkit-transform: rotateZ(15deg);
+	-webkit-transform: rotateZ(20deg);
 	transform: rotateZ(20deg);
 }
 .light3 {
+	width:120vw;
 	position: absolute;
-	bottom: -35%;
-	right: 40%;
+	bottom: -20%;
+	right: 25%;
 	z-index: 4;
 	transform-origin: 75% 75%;
-	-webkit-transform: rotateZ(-7deg);
+	-webkit-transform: rotateZ(15deg);
 	transform: rotateZ(15deg);
+}
+
+.lightrot {
+	-webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    transform-origin: 80% 80%;
+    -webkit-animation-name: rotgreen;
+    animation-name: rotgreen;
 }
 
 .light2rot {
@@ -145,23 +165,6 @@ body {
 @keyframes rotpink {
     0%, 100% {transform: rotateZ(0deg);}
     50% {transform: rotateZ(-17deg);}
-}
-
-
-.lightrot {
-	-webkit-animation-duration: 20s;
-    animation-duration: 20s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-iteration-count:infinite;
-    -webkit-animation-iteration-count:infinite;
-    transform-origin: 80% 80%;
-    -webkit-animation-name: rotgreen;
-    animation-name: rotgreen;
-
-
 }
 
 .arrow {
