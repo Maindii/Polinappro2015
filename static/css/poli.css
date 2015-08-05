@@ -27,6 +27,7 @@ body {
 .background {
 	position: absolute;
 	width:100vw !important;
+	height:100vh;
 	top:0;
 	bottom:0;
 }
@@ -34,6 +35,7 @@ body {
 
 .foreground {
 	width: 100vw;
+	height:100vh;
 	position: absolute;
 	top:0;
 	bottom:0;
@@ -64,8 +66,9 @@ body {
 
 .light1 {
 	width:120vw;
+	height:120vh;
 	position: absolute;
-	bottom: -10%;
+	bottom: -5%;
 	right: 9%;
 	z-index: 2;
 	transform-origin: 90% 85%;
@@ -73,8 +76,9 @@ body {
 
 .light2 {
 	width:120vw;
+	height:120vh;
 	position: absolute;
-	bottom: -6%;
+	bottom: 2%;
 	right: 5%;
 	z-index: 3;
 	transform-origin: 90% 85%;
@@ -83,9 +87,10 @@ body {
 }
 .light3 {
 	width:120vw;
+	height:120vh;
 	position: absolute;
-	bottom: -20%;
-	right: 25%;
+	bottom: -10%;
+	right: 20%;
 	z-index: 4;
 	transform-origin: 75% 75%;
 	-webkit-transform: rotateZ(15deg);
