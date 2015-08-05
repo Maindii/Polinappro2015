@@ -15,6 +15,30 @@ body {
   padding-right: 2vw;
 }
 
+.wrapper{
+	height: 100vh !important;
+	width: 100vw !important;
+	position:fixed;
+	left: 0;
+	top: 0;
+	bottom:0;
+}
+
+.background {
+	position: absolute;
+	width:100vw !important;
+	top:0;
+	bottom:0;
+}
+
+
+.foreground {
+	width: 100vw;
+	position: absolute;
+	top:0;
+	bottom:0;
+	z-index: 8;
+}
 
 .splash-screen {
 	top:0;
@@ -37,10 +61,107 @@ body {
 }
 
 
-@keyframes ardown {
-	0%   {transform: translateY(0); }
-	50%  {transform: translateY(15); }
-	100% {transform: translateY(0); }
+
+.light1 {
+	position: absolute;
+	bottom: 0;
+	right: 25%;
+	z-index: 2;
+}
+
+.light2 {
+	position: absolute;
+	bottom: 5%;
+	right: 17%;
+	z-index: 3;
+	transform-origin: 90% 85%;
+	-webkit-transform: rotateZ(-7deg);
+	transform: rotateZ(15deg);
+}
+.light3 {
+	position: absolute;
+	top: -15%;
+	right: 30%;
+	z-index: 4;
+	transform-origin: 75% 75%;
+	-webkit-transform: rotateZ(-7deg);
+	transform: rotateZ(15deg);
+}
+
+.light2rot {
+	-webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-name: rotgreen;
+    animation-name: rotblue;
+}
+.light3rot {
+	-webkit-animation-duration: 17s;
+    animation-duration: 17s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-name: rotgreen;
+    animation-name: rotpink;
+}
+
+@-webkit-keyframes rotgreen {
+    0%, 100% {-webkit-transform: rotateZ(0deg);}
+    50% {-webkit-transform: rotateZ(25deg);}
+}
+
+@keyframes rotgreen {
+    0%, 100% {transform: rotateZ(0deg);}
+    50% {transform: rotateZ(25deg);}
+}
+
+@-webkit-keyframes rotblue {
+    0%, 100% {-webkit-transform: rotateZ(0deg);}
+    50% {-webkit-transform: rotateZ(-11deg);}
+}
+
+@keyframes rotblue {
+    0%, 100% {transform: rotateZ(0deg);}
+    50% {transform: rotateZ(-11deg);}
+}
+
+@-webkit-keyframes rotpink {
+    0%, 100% {-webkit-transform: rotateZ(0deg);}
+    50% {-webkit-transform: rotateZ(-17deg);}
+}
+
+@keyframes rotpink {
+    0%, 100% {transform: rotateZ(0deg);}
+    50% {transform: rotateZ(-17deg);}
+}
+
+
+.lightrot {
+	-webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    transform-origin: 80% 80%;
+    -webkit-animation-name: rotgreen;
+    animation-name: rotgreen;
+
+
 }
 
 .arrow {
@@ -73,7 +194,12 @@ body {
     60% {transform: translateY(-15px);}
 }
 
+
 .bounce {
+	position: absolute;
+	top: 75%;
+	right: 50%;
+	z-index: 10;
     -webkit-animation-name: bounce;
     animation-name: bounce;
 }
