@@ -64,24 +64,24 @@ body {
 
 .light1 {
 	position: absolute;
-	bottom: 0;
+	bottom: -20%;
 	right: 25%;
 	z-index: 2;
 }
 
 .light2 {
 	position: absolute;
-	bottom: 5%;
+	bottom: -23%;
 	right: 17%;
 	z-index: 3;
 	transform-origin: 90% 85%;
-	-webkit-transform: rotateZ(-7deg);
-	transform: rotateZ(15deg);
+	-webkit-transform: rotateZ(15deg);
+	transform: rotateZ(20deg);
 }
 .light3 {
 	position: absolute;
-	top: -15%;
-	right: 30%;
+	bottom: -35%;
+	right: 40%;
 	z-index: 4;
 	transform-origin: 75% 75%;
 	-webkit-transform: rotateZ(-7deg);
