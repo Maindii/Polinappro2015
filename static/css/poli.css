@@ -8,6 +8,14 @@ body {
 	margin:0px;
 }
 
+.navbar-nav li > a {
+  font-family: hollywood;
+  font-size: 300%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+
 .splash-screen {
 	top:0;
 	background-image: url("../../static/images/nettisivut_ilman_valoja.png");
@@ -31,7 +39,7 @@ body {
 }
 
 
-@keyframes ardown { 
+@keyframes ardown {
 	0%   {transform: translateY(0); }
 	50%  {transform: translateY(15); }
 	100% {transform: translateY(0); }
@@ -46,28 +54,28 @@ body {
 
 }
 
-.animated { 
-    -webkit-animation-duration: 2s; 
-    animation-duration: 2s; 
-    -webkit-animation-fill-mode: both; 
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    animation-iteration-count:infinite; 
-    -webkit-animation-iteration-count:infinite; 
-} 
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}
 
-@-webkit-keyframes bounce { 
-    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
-    40% {-webkit-transform: translateY(-30px);} 
-    60% {-webkit-transform: translateY(-15px);} 
-} 
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+    40% {-webkit-transform: translateY(-30px);}
+    60% {-webkit-transform: translateY(-15px);}
+}
 
-@keyframes bounce { 
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-    40% {transform: translateY(-30px);} 
-    60% {transform: translateY(-15px);} 
-} 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
 
-.bounce { 
-    -webkit-animation-name: bounce; 
-    animation-name: bounce; 
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
 }
