@@ -4,6 +4,8 @@
     font-weight: normal;
 }
 
+
+
 body {
 	margin:0px;
 }
@@ -235,7 +237,8 @@ body {
 }
 
 .infotext {
-	font-size: 4vh; 
+	font-size: 4vh;
+  font-family:Quicksand;
 }
 
 .infotext-ident{
@@ -251,3 +254,14 @@ body {
 	left:0;
 	height: 100%;
 }
+
+.mobileHide { display: inline;}
+
+/* Smartphone Portrait and Landscape */
+
+@media only screen
+
+and (min-device-width : 320px)
+
+and (max-device-width : 480px){  .mobileHide { display: none;}}
+
