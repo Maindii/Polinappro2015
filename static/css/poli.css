@@ -211,3 +211,33 @@ body {
     -webkit-animation-name: bounce;
     animation-name: bounce;
 }
+
+.map {
+	position:absolute;
+	width:70vw;
+	margin-left: 15vw;
+	top: 10vh;
+	height:70%;
+
+}
+
+.mid {
+	font-size: 9vh;
+}
+
+.mid2 {
+	font-size: 7vh;
+}
+
+.mid3 {
+	margin-left: 1vw;
+	font-size: 6vh;
+}
+
+.infotext {
+	font-size: 4vh; 
+}
+
+.infotext-ident{
+	margin-left: 2vw;
+}
