@@ -241,3 +241,13 @@ body {
 .infotext-ident{
 	margin-left: 2vw;
 }
+
+.sidebar {
+	position: absolute;
+	background-image: url("../../static/images/matto.jpg");
+	width:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	height: 100%;
+}
