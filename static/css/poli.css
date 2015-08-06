@@ -1,0 +1,263 @@
+@font-face {
+    font-family: hollywood;
+    src: url(../../static/fonts/hollywood.ttf);
+    font-weight: normal;
+}
+
+
+
+body {
+	margin:0px;
+}
+
+.navbar-nav li > a {
+  font-family: hollywood;
+  font-size: 300%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.wrapper{
+	height: 100vh !important;
+	width: 100vw !important;
+	position:fixed;
+	left: 0;
+	top: 0;
+	bottom:0;
+}
+
+.background {
+	position: absolute;
+	width:100vw !important;
+	height:100vh;
+	top:0;
+	bottom:0;
+}
+
+
+.foreground {
+	width: 100vw;
+	height:100vh;
+	position: absolute;
+	top:0;
+	bottom:0;
+	z-index: 8;
+}
+
+.splash-screen {
+	top:0;
+	background-image: url("../../static/images/nettisivut_ilman_valoja.png");
+	background-size: cover;
+    background-position: center;
+	height: 200vh;
+}
+
+.splash-header{
+	font-family: hollywood;
+	margin-top: 10vh;
+	font-size: 6vw;
+}
+
+.splash-text {
+	position: relative;
+	margin-top: 10vh;
+	font-size: 2vw;
+}
+
+
+
+.light1 {
+	width:120vw;
+	height:120vh;
+	position: absolute;
+	bottom: -5%;
+	right: 9%;
+	z-index: 2;
+	transform-origin: 90% 85%;
+}
+
+.light2 {
+	width:120vw;
+	height:120vh;
+	position: absolute;
+	bottom: 2%;
+	right: 5%;
+	z-index: 3;
+	transform-origin: 90% 85%;
+	-webkit-transform: rotateZ(20deg);
+	transform: rotateZ(20deg);
+}
+.light3 {
+	width:120vw;
+	height:120vh;
+	position: absolute;
+	bottom: -10%;
+	right: 20%;
+	z-index: 4;
+	transform-origin: 75% 75%;
+	-webkit-transform: rotateZ(15deg);
+	transform: rotateZ(15deg);
+}
+
+.lightrot {
+	-webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    transform-origifont-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Crete Round', serif;
+font-family: 'Quattrocento Sans', sans-serif;
+font-family: 'Cantarell', sans-serif;n: 80% 80%;
+    -webkit-animation-name: rotgreen;
+    animation-name: rotgreen;
+}
+
+.light2rot {
+	-webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-name: rotgreen;
+    animation-name: rotblue;
+}
+.light3rot {
+	-webkit-animation-duration: 17s;
+    animation-duration: 17s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-name: rotgreen;
+    animation-name: rotpink;
+}
+
+@-webkit-keyframes rotgreen {
+    0%, 100% {-webkit-transform: rotateZ(0deg);}
+    50% {-webkit-transform: rotateZ(25deg);}
+}
+
+@keyframes rotgreen {
+    0%, 100% {transform: rotateZ(0deg);}
+    50% {transform: rotateZ(25deg);}
+}
+
+@-webkit-keyframes rotblue {
+    0%, 100% {-webkit-transform: rotateZ(0deg);}
+    50% {-webkit-transform: rotateZ(-11deg);}
+}
+
+@keyframes rotblue {
+    0%, 100% {transform: rotateZ(0deg);}
+    50% {transform: rotateZ(-11deg);}
+}
+
+@-webkit-keyframes rotpink {
+    0%, 100% {-webkit-transform: rotateZ(0deg);}
+    50% {-webkit-transform: rotateZ(-17deg);}
+}
+
+@keyframes rotpink {
+    0%, 100% {transform: rotateZ(0deg);}
+    50% {transform: rotateZ(-17deg);}
+}
+
+.arrow {
+	position: relative;
+	margin-top: 15vh;
+	font-size: 2vw;
+  	color: inherit;
+  	text-decoration: inherit;
+
+}
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+    40% {-webkit-transform: translateY(-30px);}
+    60% {-webkit-transform: translateY(-15px);}
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+
+
+.bounce {
+	position: absolute;
+	top: 75%;
+	right: 50%;
+	z-index: 10;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+
+.map {
+	position:absolute;
+	width:70vw;
+	margin-left: 15vw;
+	top: 10vh;
+	height:70%;
+
+}
+
+.mid {
+	font-size: 9vh;
+}
+
+.mid2 {
+	font-size: 7vh;
+}
+
+.mid3 {
+	margin-left: 1vw;
+	font-size: 6vh;
+}
+
+.infotext {
+	font-size: 4vh;
+  font-family:Quicksand;
+}
+
+.infotext-ident{
+	margin-left: 2vw;
+}
+
+.mobileHide { display: inline;}
+
+/* Smartphone Portrait and Landscape */
+
+@media only screen
+
+and (min-device-width : 320px)
+
+and (max-device-width : 480px){  .mobileHide { display: none;}}
