@@ -4,14 +4,6 @@
     font-weight: normal;
 }
 
-font-family: 'PT Sans Narrow', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'PT Sans Caption', sans-serif;
-font-family: 'Josefin Slab', serif;
-font-family: 'Crete Round', serif;
-font-family: 'Quattrocento Sans', sans-serif;
-font-family: 'Cantarell', sans-serif;
 
 
 body {
@@ -118,7 +110,14 @@ body {
     animation-fill-mode: both;
     animation-iteration-count:infinite;
     -webkit-animation-iteration-count:infinite;
-    transform-origin: 80% 80%;
+    transform-origifont-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Crete Round', serif;
+font-family: 'Quattrocento Sans', sans-serif;
+font-family: 'Cantarell', sans-serif;n: 80% 80%;
     -webkit-animation-name: rotgreen;
     animation-name: rotgreen;
 }
@@ -245,9 +244,18 @@ body {
 }
 
 .infotext {
-	font-size: 4vh; 
+	font-size: 4vh;
+  font-family:Quicksand;
 }
 
 .infotext-ident{
 	margin-left: 2vw;
 }
+
+.mobileHide { display: inline;}
+
+/* Smartphone Portrait and Landscape */
+
+@media only screen
+
+and (max-device-width : 480px){  .mobileHide { display: none;}}

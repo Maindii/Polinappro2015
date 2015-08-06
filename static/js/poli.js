@@ -13,8 +13,7 @@ function initialize() {
   });
 };
 
-google.maps.event.addDomListener(window, 'load', initialize);
-
+var mapOn = false;
 $(document).ready(function() {
   $('#fullpage').fullpage({
     anchors: ['splash', 'yleista', 'liput', 'aikataulu', 'kartta', 'muuta'],
@@ -25,6 +24,12 @@ $(document).ready(function() {
         $(".navbar").fadeOut();
       }else{
         $(".navbar").fadeIn();
+      }
+    },
+    afterLoad: function(anchorLink, index){
+      if(!mapOn && index == 5){
+        mapOn=true;
+        initialize();
       }
     },
   });
