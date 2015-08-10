@@ -173,13 +173,16 @@ body {
     0%, 100% {transform: rotateZ(0deg);}
     50% {transform: rotateZ(-17deg);}
 }
+a, a:hover, a:visited, a:active, a:focus {
+	color: inherit;
+  	text-decoration: none;
+  	outline: 0;
+}
 
 .arrow {
 	position: relative;
 	margin-top: 15vh;
 	font-size: 2vw;
-  	color: inherit;
-  	text-decoration: inherit;
 
 }
 
@@ -233,21 +236,27 @@ body {
 
 .mid3 {
 	margin-left: 1vw;
-	font-size: 6vh;
+	font-size: 5vh;
 }
 
 .infotext {
 	font-size: 4vh;
-  font-family:Quicksand;
+  	font-family:Quicksand;
+  	color: white;
+	-moz-text-shadow: 0 0 5px #fff;
+	-webkit-text-shadow: 0 0 5px #fff;
+	text-shadow: 0px 0px 5px #fff;
+
 }
 
 .infotext-ident{
 	margin-left: 2vw;
 }
 
-.sidebar {
+.yleista-back {
 	position: absolute;
-	background-image: url("../../static/images/matto.jpg");
+	background-image: url("../../static/images/curtains.jpg");
+	background-size: cover;
 	width:100%;
 	top:0;
 	bottom:0;
@@ -255,6 +264,49 @@ body {
 	height: 100%;
 }
 
+.liput-back {
+	position: absolute;
+	background-image: url("../../static/images/redcarpet.jpg");
+	background-size: cover;
+	width:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	height: 100%;	
+}
+
+.aikataulu-back {
+	position: absolute;
+	background-image: url("../../static/images/kermit.jpg");
+	background-size: cover;
+	width:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	height: 100%;
+}
+
+.aikataulu-overlay {
+	position: absolute;
+	background-color: black;
+	opacity: 0.7;
+	width:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	height: 100%;	
+}
+
+.liput-overlay {
+	position: absolute;
+	background-color: black;
+	opacity: 0.5;
+	width:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	height: 100%;	
+}
 .mobileHide { display: inline;}
 
 /* Smartphone Portrait and Landscape */
