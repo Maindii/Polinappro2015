@@ -225,15 +225,21 @@ body {
 
 .mid {
 	font-size: 9vh;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 700;
 }
 
 .mid2 {
 	font-size: 7vh;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 700;
 }
 
 .mid3 {
 	margin-left: 1vw;
 	font-size: 6vh;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 700;
 }
 
 .infotext {
