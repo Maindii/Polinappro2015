@@ -262,7 +262,15 @@ a, a:hover, a:visited, a:active, a:focus {
 	-moz-text-shadow: 0 0 5px #fff;
 	-webkit-text-shadow: 0 0 5px #fff;
 	text-shadow: 0px 0px 5px #fff;
+}
 
+.infotext2 {
+    font-size: 3vh;
+    font-family:Quicksand;
+    color: white;
+    -moz-text-shadow: 0 0 2px #fff;
+    -webkit-text-shadow: 0 0 2px #fff;
+    text-shadow: 0px 0px 2px #fff;
 }
 
 .infotext-ident{
@@ -323,6 +331,18 @@ a, a:hover, a:visited, a:active, a:focus {
 	left:0;
 	height: 100%;	
 }
+
+.footer {
+    position: absolute;
+    font-size: 1.5vh;
+    margin: 0px;
+    bottom: 1vh;
+}
+
+.disclaimer {
+    margin-top: 20vh;
+}
+
 .mobileHide { display: inline;}
 
 /* Smartphone Portrait and Landscape */
