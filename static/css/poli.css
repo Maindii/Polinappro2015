@@ -1,6 +1,6 @@
 @font-face {
     font-family: hollywood;
-    src: url(../../static/fonts/hollywood.ttf);
+    src: url(../../static/fonts/PASKAs.ttf);
     font-weight: normal;
 }
 
@@ -259,9 +259,5 @@ body {
 
 /* Smartphone Portrait and Landscape */
 
-@media only screen
-
-and (min-device-width : 320px)
-
-and (max-device-width : 480px){  .mobileHide { display: none;}}
-
+@media only screen and (min-width : 320px) and (max-width : 480px)
+{  .mobileHide { display: none;}}
