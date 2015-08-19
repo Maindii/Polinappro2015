@@ -343,9 +343,103 @@ a, a:hover, a:visited, a:active, a:focus {
     margin-top: 20vh;
 }
 
-.mobileHide { display: inline;}
-
 /* Smartphone Portrait and Landscape */
 
-@media only screen and (min-width : 320px) and (max-width : 480px)
-{  .mobileHide { display: none;}}
+@media only screen and (min-width : 320px) and (max-width : 600px)
+{  
+    .mobileHide {
+    display: none;
+    }
+
+    .mobilesplash {
+        margin-top: 40vh;
+        font-family: hollywood;
+        font-size: 20vw;
+    }
+    .mobileday {
+        font-family: hollywood;
+        font-size: 10vw;   
+    }
+    .light2 {
+        position: absolute;
+        right: -10%;
+        z-index: 3;
+        transform-origin: 90% 85%;
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    .mid {
+    font-size: 4vh;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 700;
+    -moz-text-shadow: 0 0 3px #fff;
+    -webkit-text-shadow: 0 0 3px #fff;
+    text-shadow: 0px 0px 3px #fff;
+}
+
+    .mid2 {
+        font-size: 2vh;
+        font-family: 'Droid Sans', sans-serif;
+        font-weight: 700;
+        -moz-text-shadow: 0 0 3px #fff;
+        -webkit-text-shadow: 0 0 3px #fff;
+        text-shadow: 0px 0px 3px #fff;
+    }
+
+    .mid3 {
+        margin-left: 1vh;
+        font-size: 5vh;
+        font-size: 5vh;
+        font-family: 'Droid Sans', sans-serif;
+        font-weight: 700;
+        -moz-text-shadow: 0 0 3px #fff;
+        -webkit-text-shadow: 0 0 3px #fff;
+        text-shadow: 0px 0px 3px #fff;
+    }
+
+    .infotext {
+        font-size: 2.5vh;
+        font-family:Quicksand;
+        color: white;
+        -moz-text-shadow: 0 0 5px #fff;
+        -webkit-text-shadow: 0 0 5px #fff;
+        text-shadow: 0px 0px 5px #fff;
+    }
+
+    .infotext2 {
+        font-size: 2vh;
+        font-family:Quicksand;
+        color: white;
+        -moz-text-shadow: 0 0 2px #fff;
+        -webkit-text-shadow: 0 0 2px #fff;
+        text-shadow: 0px 0px 2px #fff;
+    }
+
+
+    .light1 {
+        position: absolute;
+        bottom: -20%;
+        left: -5%;
+        z-index: 2;
+        transform-origin: 90% 85%;
+    }
+    .light3 {
+        position: absolute;
+        bottom: -4%;
+        left: -45%;
+        z-index: 4;
+        transform-origin: 75% 75%;
+        -webkit-transform: rotateZ(10deg);
+        transform: rotateZ(10deg);
+    }
+
+}
+
+@media only screen and (min-width : 600px)
+{
+    .desktophide{
+        display: none;
+    }
+    
+}
