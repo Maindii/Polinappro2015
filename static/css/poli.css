@@ -217,12 +217,12 @@ a, a:hover, a:visited, a:active, a:focus {
     animation-name: bounce;
 }
 
+
 .map {
-	position:absolute;
+
 	width:70vw;
 	margin-left: 15vw;
-	top: 10vh;
-	height:70%;
+	height:70vh;
 
 }
 
@@ -262,6 +262,7 @@ a, a:hover, a:visited, a:active, a:focus {
 	-moz-text-shadow: 0 0 5px #fff;
 	-webkit-text-shadow: 0 0 5px #fff;
 	text-shadow: 0px 0px 5px #fff;
+    position:relative;
 }
 
 .infotext2 {
@@ -370,13 +371,13 @@ a, a:hover, a:visited, a:active, a:focus {
     }
 
     .mid {
-    font-size: 4vh;
-    font-family: 'Droid Sans', sans-serif;
-    font-weight: 700;
-    -moz-text-shadow: 0 0 3px #fff;
-    -webkit-text-shadow: 0 0 3px #fff;
-    text-shadow: 0px 0px 3px #fff;
-}
+        font-size: 4vh;
+        font-family: 'Droid Sans', sans-serif;
+        font-weight: 700;
+        -moz-text-shadow: 0 0 3px #fff;
+        -webkit-text-shadow: 0 0 3px #fff;
+        text-shadow: 0px 0px 3px #fff;
+    }   
 
     .mid2 {
         font-size: 2vh;
