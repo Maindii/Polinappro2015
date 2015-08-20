@@ -221,7 +221,7 @@ a, a:hover, a:visited, a:active, a:focus {
 .map {
 
 	width:70vw;
-	margin-left: 15vw;
+	margin-left: 10vw;
 	height:70vh;
 
 }
@@ -341,7 +341,7 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .disclaimer {
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 /* Smartphone Portrait and Landscape */

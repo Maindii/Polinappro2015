@@ -16,7 +16,7 @@ function initialize() {
 var mapOn = false;
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    anchors: ['splash', 'yleista', 'liput', 'aikataulu', 'kartta', 'appro', 'muuta'],
+    anchors: ['splash', 'yleista', 'liput', 'aikataulu', 'kartta', 'appro', 'appro2', 'muuta'],
     menu: '#munMenu',
     scrollingSpeed: 1000,
     onLeave: function(index, nextIndex, direction){
