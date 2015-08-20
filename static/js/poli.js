@@ -18,6 +18,7 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     anchors: ['splash', 'yleista', 'liput', 'aikataulu', 'kartta', 'appro', 'appro2', 'muuta'],
     menu: '#munMenu',
+    lockAnchors: true,
     scrollingSpeed: 1000,
     onLeave: function(index, nextIndex, direction){
       if(nextIndex == 1){
@@ -61,3 +62,5 @@ function showRemaining() {
 
 timer = setInterval(showRemaining, 1000);
 });
+
+$.fn.fullpage.setLockAnchors(false);
