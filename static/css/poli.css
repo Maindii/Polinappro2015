@@ -297,7 +297,7 @@ a, a:hover, a:visited, a:active, a:focus {
 	top:0;
 	bottom:0;
 	left:0;
-	height: 100%;	
+	height: 100%;
 }
 
 .aikataulu-back {
@@ -319,7 +319,7 @@ a, a:hover, a:visited, a:active, a:focus {
 	top:0;
 	bottom:0;
 	left:0;
-	height: 100%;	
+	height: 100%;
 }
 
 .liput-overlay {
@@ -330,7 +330,7 @@ a, a:hover, a:visited, a:active, a:focus {
 	top:0;
 	bottom:0;
 	left:0;
-	height: 100%;	
+	height: 100%;
 }
 
 .footer {
@@ -347,7 +347,7 @@ a, a:hover, a:visited, a:active, a:focus {
 /* Smartphone Portrait and Landscape */
 
 @media only screen and (min-width : 320px) and (max-width : 600px)
-{  
+{
     .mobileHide {
     display: none;
     }
@@ -359,7 +359,7 @@ a, a:hover, a:visited, a:active, a:focus {
     }
     .mobileday {
         font-family: hollywood;
-        font-size: 10vw;   
+        font-size: 10vw;
     }
     .light2 {
         position: absolute;
@@ -372,48 +372,23 @@ a, a:hover, a:visited, a:active, a:focus {
 
     .mid {
         font-size: 4vh;
-        font-family: 'Droid Sans', sans-serif;
-        font-weight: 700;
-        -moz-text-shadow: 0 0 3px #fff;
-        -webkit-text-shadow: 0 0 3px #fff;
-        text-shadow: 0px 0px 3px #fff;
-    }   
+    }
 
     .mid2 {
         font-size: 3vh;
-        font-family: 'Droid Sans', sans-serif;
-        font-weight: 700;
-        -moz-text-shadow: 0 0 3px #fff;
-        -webkit-text-shadow: 0 0 3px #fff;
-        text-shadow: 0px 0px 3px #fff;
     }
 
     .mid3 {
         margin-left: 1vh;
         font-size: 2vh;
-        font-family: 'Droid Sans', sans-serif;
-        font-weight: 700;
-        -moz-text-shadow: 0 0 3px #fff;
-        -webkit-text-shadow: 0 0 3px #fff;
-        text-shadow: 0px 0px 3px #fff;
     }
 
     .infotext {
         font-size: 2vh;
-        font-family:Quicksand;
-        color: white;
-        -moz-text-shadow: 0 0 5px #fff;
-        -webkit-text-shadow: 0 0 5px #fff;
-        text-shadow: 0px 0px 5px #fff;
     }
 
     .infotext2 {
         font-size: 2vh;
-        font-family:Quicksand;
-        color: white;
-        -moz-text-shadow: 0 0 2px #fff;
-        -webkit-text-shadow: 0 0 2px #fff;
-        text-shadow: 0px 0px 2px #fff;
     }
 
 
@@ -433,6 +408,29 @@ a, a:hover, a:visited, a:active, a:focus {
         -webkit-transform: rotateZ(10deg);
         transform: rotateZ(10deg);
     }
+    @media  only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi) {
+    /* Style Rules */
+      .mid {
+          font-size: 32px;
+      }
+
+      .mid2 {
+          font-size: 24px;
+      }
+
+      .mid3 {
+          font-size: 18px;
+      }
+
+      .infotext {
+          font-size: 14px;
+      }
+
+      .infotext2 {
+          font-size: 14px;
+      }
+    }
 
 }
 
@@ -441,5 +439,5 @@ a, a:hover, a:visited, a:active, a:focus {
     .desktophide{
         display: none;
     }
-    
+
 }
