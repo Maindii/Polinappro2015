@@ -291,7 +291,7 @@ a, a:hover, a:visited, a:active, a:focus {
 
 .liput-back {
 	position: absolute;
-	background-image: url("../../static/images/redcarpet.jpg");
+	background-image: url("../../static/images/oscars.jpg");
 	background-size: cover;
 	width:100%;
 	top:0;
@@ -309,6 +309,39 @@ a, a:hover, a:visited, a:active, a:focus {
 	bottom:0;
 	left:0;
 	height: 100%;
+}
+
+.muuta1-back {
+    position: absolute;
+    background-image: url("../../static/images/redcarpet.jpg");
+    background-size: cover;
+    width:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    height: 100%;
+}
+
+.muuta2-back {
+    position: absolute;
+    background-image: url("../../static/images/muut2.jpg");
+    background-size: cover;
+    width:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    height: 100%;
+}
+
+.ota-back {
+    position: absolute;
+    background-image: url("../../static/images/maisem.jpg");
+    background-size: cover;
+    width:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    height: 100%;
 }
 
 .aikataulu-overlay {
