@@ -1,39 +1,19 @@
-function initialize() {
-  var myLatlng = new google.maps.LatLng(60.1642421, 24.9320541);
-  var mapOptions = {
-    zoom: 15,
-    center: myLatlng
-  }
-  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-
-  var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Hello World!'
-  });
+function initMap(){
+  var map = L.map('map').setView([60.1642421, 24.9320541], 13);
 };
 
-var mapOn = false;
 $(document).ready(function() {
   $('#fullpage').fullpage({
     anchors: ['splash', 'yleista', 'liput', 'aikataulu', 'kartta', 'appro', 'appro2', 'muuta'],
     menu: '#munMenu',
     lockAnchors: true,
     scrollingSpeed: 1000,
-    scrollBar: false,
-    //fixedElements: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '.fixedElesMobile' : '.fixedEles',
     onLeave: function(index, nextIndex, direction){
       if(nextIndex == 1){
         $(".navbar").fadeOut();
 
       }else{
         $(".navbar").fadeIn();
-      }
-    },
-    afterLoad: function(anchorLink, index){
-      if(!mapOn && index == 5){
-        mapOn=true;
-        initialize();
       }
     },
   });
@@ -68,6 +48,4 @@ timer = setInterval(showRemaining, 1000);
 $(".navbar-nav li a").click(function(event) {
    $(".navbar-collapse").collapse('hide');
  });
-
- window.scrollTo(0,1);
 });
