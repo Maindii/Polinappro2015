@@ -61,4 +61,8 @@ function showRemaining() {
 }
 
 timer = setInterval(showRemaining, 1000);
+
+$(".navbar-nav li a").click(function(event) {
+   $(".navbar-collapse").collapse('hide');
+ });
 });
