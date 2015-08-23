@@ -44,6 +44,7 @@ body {
 	width:100vw !important;
 	height:100vh;
 	top:0;
+    left:0;
 	bottom:0;
 }
 
@@ -445,7 +446,8 @@ a, a:hover, a:visited, a:active, a:focus {
     .light1 {
         size:140%;
         position: absolute;
-        left: -5%;
+        bottom:10%;
+        left: -10%;
         z-index: 2;
         transform-origin: 90% 85%;
     }
@@ -453,20 +455,50 @@ a, a:hover, a:visited, a:active, a:focus {
     .light2 {
         position: absolute;
         z-index: 3;
-        right:20%;
-        bottom:10%;
+        right:35%;
+        bottom:5%;
         transform-origin: 90% 85%;
         -webkit-transform: rotateZ(40deg);
         transform: rotateZ(40deg);
     }
     .light3 {
         position: absolute;
-        bottom: -4%;
-        left: -30%;
+        bottom: 5%;
+        left: -35%;
         z-index: 4;
         transform-origin: 75% 75%;
         -webkit-transform: rotateZ(10deg);
         transform: rotateZ(10deg);
+    }
+
+    @-webkit-keyframes rotgreen {
+    0%, 100% {-webkit-transform: rotateZ(0deg);}
+    50% {-webkit-transform: rotateZ(15deg);}
+    }
+
+    @keyframes rotgreen {
+        0%, 100% {transform: rotateZ(0deg);}
+        50% {transform: rotateZ(15deg);}
+    }
+
+    @-webkit-keyframes rotblue {
+        0%, 100% {-webkit-transform: rotateZ(0deg);}
+        50% {-webkit-transform: rotateZ(-11deg);}
+    }
+
+    @keyframes rotblue {
+        0%, 100% {transform: rotateZ(0deg);}
+        50% {transform: rotateZ(-11deg);}
+    }
+
+    @-webkit-keyframes rotpink {
+        0%, 100% {-webkit-transform: rotateZ(0deg);}
+        50% {-webkit-transform: rotateZ(-25deg);}
+    }
+
+    @keyframes rotpink {
+        0%, 100% {transform: rotateZ(0deg);}
+        50% {transform: rotateZ(-25deg);}
     }
     @media  only screen and (min-device-pixel-ratio: 2),
         only screen and (min-resolution: 192dpi) {
