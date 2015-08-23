@@ -62,5 +62,3 @@ function showRemaining() {
 
 timer = setInterval(showRemaining, 1000);
 });
-
-$.fn.fullpage.setLockAnchors(false);
