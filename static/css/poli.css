@@ -10,6 +10,7 @@ body {
 	margin:0px;
 }
 
+
 .navbar-nav li > a {
   font-family: hollywood;
   font-size: 300%;
@@ -185,6 +186,12 @@ a, a:hover, a:visited, a:active, a:focus {
 	font-size: 2vw;
 
 }
+
+.ielogo {
+    margin-top: 0px;
+    height: 5vh;
+    width:auto;
+} 
 
 .animated {
     -webkit-animation-duration: 2s;
