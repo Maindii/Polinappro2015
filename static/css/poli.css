@@ -10,6 +10,18 @@ body {
 	margin:0px;
 }
 
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.navbar-inner {
+  text-align:center;
+}
 
 .navbar-nav li > a {
   font-family: hollywood;
@@ -187,9 +199,14 @@ a, a:hover, a:visited, a:active, a:focus {
 
 }
 
+.navbar-brand {
+    padding-top: 5px;
+}
+
 .ielogo {
+    padding-top: 0px;
     margin-top: 0px;
-    height: 5vh;
+    height: 4vh;
     width:auto;
 } 
 
