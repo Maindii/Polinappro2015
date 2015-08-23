@@ -20,9 +20,12 @@ $(document).ready(function() {
     menu: '#munMenu',
     lockAnchors: true,
     scrollingSpeed: 1000,
+    scrollBar: true,
+    fixedElements: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '.fixedElesMobile' : '.fixedEles',
     onLeave: function(index, nextIndex, direction){
       if(nextIndex == 1){
         $(".navbar").fadeOut();
+
       }else{
         $(".navbar").fadeIn();
       }
