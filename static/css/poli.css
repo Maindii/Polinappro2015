@@ -53,6 +53,7 @@ body {
 	height:100vh;
 	position: absolute;
 	top:0;
+    left:0;
 	bottom:0;
 	z-index: 8;
 }
@@ -418,14 +419,6 @@ a, a:hover, a:visited, a:active, a:focus {
         font-family: hollywood;
         font-size: 10vw;
     }
-    .light2 {
-        position: absolute;
-        right: -10%;
-        z-index: 3;
-        transform-origin: 90% 85%;
-        -webkit-transform: rotateZ(0deg);
-        transform: rotateZ(0deg);
-    }
 
     .mid {
         font-size: 4vh;
@@ -450,16 +443,26 @@ a, a:hover, a:visited, a:active, a:focus {
 
 
     .light1 {
+        size:140%;
         position: absolute;
-        bottom: -20%;
         left: -5%;
         z-index: 2;
         transform-origin: 90% 85%;
     }
+
+    .light2 {
+        position: absolute;
+        z-index: 3;
+        right:20%;
+        bottom:10%;
+        transform-origin: 90% 85%;
+        -webkit-transform: rotateZ(40deg);
+        transform: rotateZ(40deg);
+    }
     .light3 {
         position: absolute;
         bottom: -4%;
-        left: -45%;
+        left: -30%;
         z-index: 4;
         transform-origin: 75% 75%;
         -webkit-transform: rotateZ(10deg);
