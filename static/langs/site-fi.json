@@ -1,3 +1,41 @@
 {
-	"yleista-nav": "yleistÄ"
+	"yleista-nav": "yleistÄ",
+	"liput-nav": "liput",
+	"aikataulu-nav": "aikataulu",
+	"kartta-nav": "kartta",
+	"muuta-nav": "muuta",
+	"yhteytta-nav": "ota yhteyttä",
+
+	"yleista-header": "Polin appro ke 4.11.2015!",
+	"yleista-text": "Polin appro -baariseikkailu tulee taas uudella ilmeellä! Tämä legendaksi muodostunut Suomen suurin teekkarivetoinen baarikiertely kerää yhteen kaikki opiskelijat ja opiskelijamieliset. Tule taistelemaan Hollywoodin kirkkaimman tähden tittelistä sekä bilettämään jatkoilla Sosiaalifobian ja Siman tahtiin!",
+	"liput-header": "Liput",
+	"liput-myyjilta": "13€ myyjiltä",
+	"liput-bailataan": "13,50€ bailataan.fi:stä",
+	"liput-jatkot": "7€ vain jatkot",
+	"liput-narikka": "Liput sisältävät jatkojen narikkamaksun (3€)",
+	"liput-myyntiheader": "Lipunmyynti",
+	"liput-myynti": "Lipunmyyntipaikat ja -ajat ilmoitetaan myöhemmin",
+	"liput-suoritustasot": "Suoritustasot",
+	"liput-bronze": "7 – Bronze",
+	"liput-silver": "11 – Silver",
+	"liput-gold": "15 - Gold",
+	"liput-disclaimer": "Muista approista poiketen suorituksiin ei vaadita aikaisempaa osallistumista, eli minkä tahansa suoritustason voi saavuttaa jo ensimmäisellä osallistumiskerralla.",
+	"aikataulut-header": "Aikataulut", 
+	"aikataulut-text": "Tapahtuma alkaa portaittain kello 16.00 lähtien, jonka jälkeen kiertelyaikaa on 4 tuntia. Yhteiset jatkot pamahtavat käyntiin kello 21 alkaen Club Capitalissa (Fredrikinkatu 51).",
+	"aikataulut-subheader": "Jatkojen aikataulu:",
+	"aikataulut-sosiaali": "22:30 Sosiaalifobia",
+	"aikataulut-sima": "00:30 Sima",
+	"kartta-header": "Kartta",
+	"kartta-disclaimer": "Osallistujabaarit lisätään myöhemmin.",
+	"muuta-header": "MIKÄ POLIN APPRO?", 
+	"muuta-text": "Polin Appro on Aalto-yliopiston ylioppilaskunnan (AYY) toimikunnan Isännistön ja Emännistön (IE) järjestämä tajunnanräjäyttävä appro Helsingin ydinkeskustassa. Appro sijoittuu Vanhan Polin ympäristölle teekkariuden alkulähteille rajaten approalueen Punavuoresta Kamppiin. Tänä vuonna 2015 appro järjestetään jo neljättä kertaa, sillä kaikkina aikaisempina vuosina meno on ollut huikeaa, kun lauma haalaripukuisia opiskelijoita ja opiskelijamielisiä tutkinnosta riippumatta ovat vallanneet Helsingin kadut. Muista approista poiketen Polin appro muuttaa muotoaan joka vuosi. Tänä vuonna approssa päästään nauttimaan Hollywoodin glamourista erilaisten erikoisrastien muodossa.",
+	"muuta2-header": "MIKÄ APPRO?",
+	"muuta2-text": "Appron ideana on kiertää approlippuun merkittyjä baareja juomaleimoja keräten. Illan mittaan kerätyistä leimoista saa jatkopaikalla haalarimerkin, joka määräytyy leimojen lukumäärän mukaisesti. Polin approssa suoritusaika on neljä tuntia. Kiertelyn jälkeen suunnataan kohti Club Capitalia, jossa ovat tapahtuman viralliset jatkot. Jatkoille pääsee approlipulla.",
+	"otayht-ieheader": "MIKÄ IE?",
+	"otayht-ietext": "IE eli Isännistö ja Emännistö on AYY:n Teekkarijaoston alla toimiva toimikunta, joka järjestää tapahtumia. IE on perinteisesti ollut toimikunta, johon kuuluu teekkariyhdistysten tapahtumavastaavia. AYY:n myötä teekkareiden vahvistukseksi IE:seen on saatu myös muutama Kylteri ja Taikkilainen. Polin Appro on suurin IE:n yhdessä järjestämä tapahtuma. Koko porukkaa yhdistää innostus sekä antaumuksellinen asenne tapahtumien järjestämiseen luoden hauskanpidon puitteet kaikille.",
+	"otayht-header": "Ota yhteyttä",
+	"otayht-text": "Onko kysyttävää tai muuta mietittävää? Ota yhteyttä toimikunnan puheenjohtajaan IE-tirehtööriin sähköpostilla: joanna.haahti@ayy.fi",
+	"otayht-facebook": "Tapahtuma <a href='http://vituttaa.paitsiossa.com'>Facebookissa</a>"
+
+
 }
