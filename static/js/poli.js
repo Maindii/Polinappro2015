@@ -15,8 +15,6 @@ function initialize() {
 
 var mapOn = false;
 $(document).ready(function() {
-  var opts = {pathPrefix: "static/langs", skipLanguage: /^en/};
-  $("[data-localize]").localize("site", opts);
   $('#fullpage').fullpage({
     anchors: ['splash', 'yleista', 'liput', 'aikataulu', 'kartta', 'appro', 'appro2', 'muuta'],
     menu: '#munMenu',
@@ -70,9 +68,6 @@ timer = setInterval(showRemaining, 1000);
 $(".navbar-nav li a").click(function(event) {
    $(".navbar-collapse").collapse('hide');
  });
-});
 
-var localize = function(lang) {
-  var opts = {pathPrefix: "static/langs", language: lang};
-  $("[data-localize]").localize("site", opts);
-}
+ window.scrollTo(0,1);
+});
