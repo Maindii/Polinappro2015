@@ -207,8 +207,8 @@ a, a:hover, a:visited, a:active, a:focus {
 
 .ielogo {
     padding-top: 0px;
-    padding-left:20px;
-    height: 5vh;
+    padding-left: 20px;
+    height: 100%;
     width:auto;
 } 
 
