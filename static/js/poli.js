@@ -36,7 +36,6 @@ $(document).ready(function() {
     scrollingSpeed: 1000,
     recordHistory: false,
     normalScrollElements: "#map",
-    resize: true,
     onLeave: function(index, nextIndex, direction){
       if(nextIndex == 1){
         $(".navbar").fadeOut();
