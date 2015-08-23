@@ -132,6 +132,10 @@
           </p>
           </div>
           </div>
+          <h3 class="mid3 text-center" data-localize="liput-myyntiheader">Lipunmyynti</h3>
+          <p class="infotext disclaimer" data-localize="liput-myynti">
+            Lipunmyyntipaikat ja -ajat ilmoitetaan myöhemmin
+          </p>
           <p class="infotext disclaimer" data-localize="liput-disclaimer">
             Muista approista poiketen suorituksiin ei vaadita aikaisempaa osallistumista, eli minkä tahansa suoritustason voi saavuttaa jo ensimmäisellä osallistumiskerralla.
           </p>
@@ -149,10 +153,10 @@
           </p>
           <br>
           <h4 class="mid2 text-center" data-localize="aikataulut-subheader">Jatkojen aikataulu:</h4>
-          <p class="infotext text-center">
+          <p class="infotext text-center" data-localize="aikataulut-sosiaali">
             22:30 Sosiaalifobia
           </p>
-          <p class="infotext text-center">
+          <p class="infotext text-center" data-localize="aikataulut-sima">
             00:30 Sima
           </p>
         </div>
@@ -184,7 +188,7 @@
         <div class="muuta2-back"></div>
         <div class="aikataulu-overlay"></div>
         <div class="col-xs-offset-1 col-xs-10">
-          <h3 class="mid2 disclaimer" data-localize="muuta2-header">MIKÄ APPRO</h3>
+          <h3 class="mid2 disclaimer" data-localize="muuta2-header">MIKÄ APPRO?</h3>
           <p class="infotext2" data-localize="muuta2-text">
             Appron ideana on kiertää approlippuun merkittyjä baareja juomaleimoja keräten. Illan mittaan kerätyistä leimoista saa jatkopaikalla haalarimerkin, joka määräytyy leimojen lukumäärän mukaisesti. Polin approssa suoritusaika on neljä tuntia. Kiertelyn jälkeen suunnataan kohti Club Capitalia, jossa ovat tapahtuman viralliset jatkot. Jatkoille pääsee approlipulla.
           </p>
@@ -197,7 +201,7 @@
         <div class="aikataulu-overlay"></div>
         <div class="col-xs-offset-1 col-xs-10">
             <h3 class="mid2" data-localize="otayht-ieheader">Mikä IE?</h3>
-            <p class="infotext2" data-localize="otayht-itetext">
+            <p class="infotext2" data-localize="otayht-ietext">
               IE eli Isännistö ja Emännistö on AYY:n Teekkarijaoston alla toimiva toimikunta, joka järjestää tapahtumia. IE on perinteisesti ollut toimikunta, johon kuuluu teekkariyhdistysten tapahtumavastaavia. AYY:n myötä teekkareiden vahvistukseksi IE:seen on saatu myös muutama Kylteri ja Taikkilainen. Polin Appro on suurin IE:n yhdessä järjestämä tapahtuma. Koko porukkaa yhdistää innostus sekä antaumuksellinen asenne tapahtumien järjestämiseen luoden hauskanpidon puitteet kaikille.
             </p>
             <h3 class="mid2" data-localize="otayht-header">Ota yhteyttä</h3>
@@ -214,7 +218,7 @@
   </div>
 
   <script>
-    var opts = {pathPrefix: "static/langs"};
+    var opts = {pathPrefix: "static/langs", skipLanguage: /^en/};
     $("[data-localize]").localize("site", opts);
   </script>
 
