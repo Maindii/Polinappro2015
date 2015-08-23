@@ -21,7 +21,7 @@ $(document).ready(function() {
     lockAnchors: true,
     scrollingSpeed: 1000,
     scrollBar: false,
-    fixedElements: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '.fixedElesMobile' : '.fixedEles',
+    //fixedElements: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '.fixedElesMobile' : '.fixedEles',
     onLeave: function(index, nextIndex, direction){
       if(nextIndex == 1){
         $(".navbar").fadeOut();
