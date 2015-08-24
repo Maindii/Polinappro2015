@@ -10,6 +10,10 @@ body {
 	margin:0px;
 }
 
+.logoimg {
+    width:100%;
+}
+
 .navbar .nav,
 .navbar .nav > li {
   float:none;
