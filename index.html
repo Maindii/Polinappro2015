@@ -13,14 +13,15 @@
   <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="static/css/jquery.fullPage.css" />
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
   <link rel="stylesheet" href="static/css/poli.css">
   <link rel="stylesheet" href="static/css/flag-icon.min.css">
   <script src="static/js/jquery.js"></script>
   <script src="static/js/bootstrap.min.js"></script>
   <script src="static/js/jquery.fullPage.min.js"></script>
-  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-  <script src="static/js/poli.js"></script>
   <script src="static/js/jquery.localize.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+  <script src="static/js/poli.js"></script>
   <title>Polin Appro 2015</title>
 
 </head>
@@ -66,29 +67,28 @@
   </nav>
   <div class="homo">
 
-  <div id="fullpage">
-    <div class="section" id="section0">
-      &nbsp
-      <div class="wrapper mobileHide">
-        <div class="background"><img class="background" src="static/images/nettisivut_ilman_valoja.png"></div>
-        <div class="light1"><img class="light1 lightrot" src="static/images/valo_vihrea.png"></div>
-        <div class="light2"><img class="light2 light2rot" src="static/images/valo_sininen.png"></div>
-        <div class="light3"><img class="light3 light3rot" src="static/images/valo_pinkki.png"></div>
-        <div class="foreground"><img class="foreground" src="static/images/polipaallinen.png"></div>
-      </div>
-
+    <div id="fullpage">
+      <div class="section" id="section0">
+        &nbsp
+        <div class="wrapper mobileHide">
+          <div class="background fixedEles"><img class="background" src="static/images/nettisivut_ilman_valoja.png"></div>
+          <div class="light1 fixedEles"><img class="light1 lightrot" src="static/images/valo_vihrea.png"></div>
+          <div class="light2 fixedEles"><img class="light2 light2rot" src="static/images/valo_sininen.png"></div>
+          <div class="light3 fixedEles"><img class="light3 light3rot" src="static/images/valo_pinkki.png"></div>
+          <div class="foreground fixedEles"><img class="foreground" src="static/images/polipaallinen.png"></div>
+        </div>
       <div class="wrapper desktophide text-center">
-        <div class="background"><img class="background" src="static/images/puhelimeen.png"></div>
-        <div class="light1"><img class="light1 lightrot" src="static/images/valo_vihrea.png"></div>
-        <div class="light2"><img class="light2 light2rot" src="static/images/valo_sininen.png"></div>
-        <div class="light3"><img class="light3 light3rot" src="static/images/valo_pinkki.png"></div>
-        <div class="foreground"><img class="foreground" src="static/images/puhelimeen_front.png"></div>
-      </div>
-      <a href="#yleista" class="arrow animated bounce">
-      <div class="text-center">
-        <span class="glyphicon glyphicon-triangle-bottom"></span><br><span class="glyphicon glyphicon-triangle-bottom"></span>
-      </div>
-      </a>
+          <div class="background fixedElesMobile"><img class="background" src="static/images/puhelimeen.png"></div>
+          <div class="light1 fixedElesMobile"><img class="light1 lightrot" src="static/images/valo_vihrea.png"></div>
+          <div class="light2 fixedElesMobile"><img class="light2 light2rot" src="static/images/valo_sininen.png"></div>
+          <div class="light3 fixedElesMobile"><img class="light3 light3rot" src="static/images/valo_pinkki.png"></div>
+          <div class="foreground fixedElesMobile"><img class="foreground" src="static/images/puhelimeen_front.png"></div>
+        </div>
+        <a href="javascript: $.fn.fullpage.moveTo(2);" class="arrow animated bounce">
+          <div class="text-center">
+            <span class="glyphicon glyphicon-triangle-bottom"></span><br><span class="glyphicon glyphicon-triangle-bottom"></span>
+          </div>
+        </a>
     </div>
     <div class="section container" id="section1">
     <div class="sidebar yleista-back"></div>
@@ -119,129 +119,138 @@
     </div>
     </div>
     </div>
-    <div class="section" id="section2">
-      <div class="liput-back"></div>
-      <div class="liput-overlay"></div>
-      <div class="container">
-        <div class="col-xs-offset-1 col-xs-10">
-          <div class="row disclaimer">
-          <div class="col-xs-6">
-          <h3 class="mid2" data-localize="liput-header">Liput</h3>
-          <p class="infotext infotext-ident" data-localize="liput-myyjilta">
-            13€ myyjiltä
-          </p>
-          <p class="infotext infotext-ident" data-localize="liput-bailataan">
-            13,50€ bailataan.fi:stä
-          </p>
-          <p class="infotext infotext-ident" data-localize="liput-jatkot">
-            7€ vain jatkot
-          </p>
-          <p class="infotext infotext-ident" data-localize="liput-narikka">
-            Liput sisältävät jatkojen narikkamaksun (3€)
-          </p>
+   <div class="section" id="section2">
+        <div class="liput-back"></div>
+        <div class="liput-overlay"></div>
+        <div class="container slide">
+          <div class="col-xs-offset-1 col-xs-10">
+            <div class="row disclaimer">
+              <div class="col-xs-6">
+                <h3 class="mid2" data-localize="liput-header">Liput</h3>
+                <p class="infotext infotext-ident" data-localize="liput-myyjilta">
+                  13€ myyjiltä
+                </p>
+                <p class="infotext infotext-ident" data-localize="liput-bailataan">
+                  13,50€ bailataan.fi:stä
+                </p>
+                <p class="infotext infotext-ident" data-localize="liput-jatkot">
+                  7€ vain jatkot
+                </p>
+                <p class="infotext infotext-ident" data-localize="liput-narikka">
+                  Liput sisältävät jatkojen narikkamaksun (3€)
+                </p>
 
+              </div>
+              <div class="col-xs-6">
+                <h3 class="mid2" data-localize="liput-suoritustasot">Suoritustasot</h3>
+                <p class="infotext infotext-ident" data-localize="liput-bronze">
+                  7 – Bronze
+                </p>
+                <p class="infotext infotext-ident" data-localize="liput-silver">
+                  11 – Silver
+                </p>
+                <p class="infotext infotext-ident" data-localize="liput-gold">
+                  15 - Gold
+                </p>
+              </div>
+            </div>
+            <p class="infotext disclaimer" data-localize="liput-disclaimer">
+              Muista approista poiketen suorituksiin ei vaadita aikaisempaa osallistumista, eli minkä tahansa suoritustason voi saavuttaa jo ensimmäisellä osallistumiskerralla.
+            </p>
           </div>
-          <div class="col-xs-6">
-          <h3 class="mid2" data-localize="liput-suoritustasot">Suoritustasot</h3>
-          <p class="infotext infotext-ident" data-localize="liput-bronze">
-            7 – Bronze
-          </p>
-          <p class="infotext infotext-ident" data-localize="liput-silver">
-            11 – Silver
-          </p>
-          <p class="infotext infotext-ident" data-localize="liput-gold">
-            15 - Gold
-          </p>
+        </div>
+        <div class="container slide">
+          <div class="row disclaimer">
+            <div class="col-xs-offset-1 col-xs-10">
+              <h3 class="mid2 text-center" data-localize="liput-myyntiheader">Lipunmyynti</h3>
+              <p class="infotext2 text-center" data-localize="liput-myynti">
+                Lipunmyyntipaikat ja -ajat ilmoitetaan myöhemmin
+              </p>
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="section container" id="section3">
+        <div class="container">
+          <div class="aikataulu-back"></div>
+          <div class="aikataulu-overlay"></div>
+          <div class="col-xs-offset-1 col-xs-10">
+            <h3 class="mid2 text-center" data-localize="aikataulut-header">Aikataulut</h3>
+            <p class="text-center infotext" data-localize="aikataulut-text">
+              Tapahtuma alkaa portaittain kello 16.00 lähtien, jonka jälkeen kiertelyaikaa on 4 tuntia. Yhteiset jatkot pamahtavat käyntiin kello 21 alkaen Club Capitalissa (Fredrikinkatu 51).
+            </p>
+            <br>
+            <h4 class="mid2 text-center" data-localize="aikataulut-subheader">Jatkojen aikataulu:</h4>
+            <p class="infotext text-center" data-localize="aikataulut-sosiaali">
+              22:30 Sosiaalifobia
+            </p>
+            <p class="infotext text-center" data-localize="aikataulut-sima">
+              00:30 Sima
+            </p>
           </div>
-          <h3 class="mid3 text-center" data-localize="liput-myyntiheader">Lipunmyynti</h3>
-          <p class="infotext disclaimer" data-localize="liput-myynti">
-            Lipunmyyntipaikat ja -ajat ilmoitetaan myöhemmin
-          </p>
-          <p class="infotext disclaimer" data-localize="liput-disclaimer">
-            Muista approista poiketen suorituksiin ei vaadita aikaisempaa osallistumista, eli minkä tahansa suoritustason voi saavuttaa jo ensimmäisellä osallistumiskerralla.
-          </p>
         </div>
       </div>
-    </div>
-    <div class="section container" id="section3">
-      <div class="container">
-        <div class="aikataulu-back"></div>
-        <div class="aikataulu-overlay"></div>
-        <div class="col-xs-offset-1 col-xs-10">
-          <h3 class="mid2 text-center" data-localize="aikataulut-header">Aikataulut</h3>
-          <p class="text-center infotext" data-localize="aikataulut-text">
-            Tapahtuma alkaa portaittain kello 16.00 lähtien, jonka jälkeen kiertelyaikaa on 4 tuntia. Yhteiset jatkot pamahtavat käyntiin kello 21 alkaen Club Capitalissa (Fredrikinkatu 51).
-          </p>
-          <br>
-          <h4 class="mid2 text-center" data-localize="aikataulut-subheader">Jatkojen aikataulu:</h4>
-          <p class="infotext text-center" data-localize="aikataulut-sosiaali">
-            22:30 Sosiaalifobia
-          </p>
-          <p class="infotext text-center" data-localize="aikataulut-sima">
-            00:30 Sima
-          </p>
+      <div class="section" id="section4">
+        <div class="container">
+          <h3 class="mid2 text-center" style="margin-top:15vh" data-localize="kartta-header">Kartta</h3>
+          <div class="map slider container">
+            <div class="slide col-md-3" id="map"></div>
+          </div>
+          <p class="infotext text-center" data-localize="kartta-disclaimer">Osallistujabaarit lisätään myöhemmin.</p>
         </div>
       </div>
-    </div>
-    <div class="section" id="section4">
-    <div class="container">
-      <h3 class="mid2 text-center" style="margin-top:15vh" data-localize="kartta-header">Kartta</h3>
-      <div class="map slider container">
-        <div class="slide col-md-3" id="map_canvas"></div>
-      </div>
-      <p class="infotext text-center" data-localize="kartta-disclaimer">Osallistujabaarit lisätään myöhemmin.</p>
-      </div>
-    </div>
-    <div class="section" id="section5">
-      <div class="container">
-        <div class="muuta1-back"></div>
-        <div class="aikataulu-overlay"></div>
-        <div class="col-xs-offset-1 col-xs-10">
-          <h3 class="mid2 disclaimer" data-localize="muuta-header">MIKÄ POLIN APPRO?</h3>
-          <p class="infotext2" data-localize="muuta-text">
-            Polin Appro on Aalto-yliopiston ylioppilaskunnan (AYY) toimikunnan Isännistön ja Emännistön (IE) järjestämä tajunnanräjäyttävä appro Helsingin ydinkeskustassa. Appro sijoittuu Vanhan Polin ympäristölle teekkariuden alkulähteille rajaten approalueen Punavuoresta Kamppiin. Tänä vuonna 2015 appro järjestetään jo neljättä kertaa, sillä kaikkina aikaisempina vuosina meno on ollut huikeaa, kun lauma haalaripukuisia opiskelijoita ja opiskelijamielisiä tutkinnosta riippumatta ovat vallanneet Helsingin kadut. Muista approista poiketen Polin appro muuttaa muotoaan joka vuosi. Tänä vuonna approssa päästään nauttimaan Hollywoodin glamourista erilaisten erikoisrastien muodossa.
-          </p>
+      <div class="section" id="section5">
+        <div class="container">
+          <div class="muuta1-back"></div>
+          <div class="aikataulu-overlay"></div>
+          <div class="col-xs-offset-1 col-xs-10">
+            <h3 class="mid2 disclaimer" data-localize="muuta-header">MIKÄ POLIN APPRO?</h3>
+            <p class="infotext2" data-localize="muuta-text">
+              Polin Appro on Aalto-yliopiston ylioppilaskunnan (AYY) toimikunnan Isännistön ja Emännistön (IE) järjestämä tajunnanräjäyttävä appro Helsingin ydinkeskustassa. Appro sijoittuu Vanhan Polin ympäristölle teekkariuden alkulähteille rajaten approalueen Punavuoresta Kamppiin. Tänä vuonna 2015 appro järjestetään jo neljättä kertaa, sillä kaikkina aikaisempina vuosina meno on ollut huikeaa, kun lauma haalaripukuisia opiskelijoita ja opiskelijamielisiä tutkinnosta riippumatta ovat vallanneet Helsingin kadut. Muista approista poiketen Polin appro muuttaa muotoaan joka vuosi. Tänä vuonna approssa päästään nauttimaan Hollywoodin glamourista erilaisten erikoisrastien muodossa.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="muuta2-back"></div>
-        <div class="aikataulu-overlay"></div>
-        <div class="col-xs-offset-1 col-xs-10">
-          <h3 class="mid2 disclaimer" data-localize="muuta2-header">MIKÄ APPRO?</h3>
-          <p class="infotext2" data-localize="muuta2-text">
-            Appron ideana on kiertää approlippuun merkittyjä baareja juomaleimoja keräten. Illan mittaan kerätyistä leimoista saa jatkopaikalla haalarimerkin, joka määräytyy leimojen lukumäärän mukaisesti. Polin approssa suoritusaika on neljä tuntia. Kiertelyn jälkeen suunnataan kohti Club Capitalia, jossa ovat tapahtuman viralliset jatkot. Jatkoille pääsee approlipulla.
-          </p>
+      <div class="section">
+        <div class="container">
+          <div class="muuta2-back"></div>
+          <div class="aikataulu-overlay"></div>
+          <div class="col-xs-offset-1 col-xs-10">
+            <h3 class="mid2 disclaimer" data-localize="muuta2-header">MIKÄ APPRO?</h3>
+            <p class="infotext2" data-localize="muuta2-text">
+              Appron ideana on kiertää approlippuun merkittyjä baareja juomaleimoja keräten. Illan mittaan kerätyistä leimoista saa jatkopaikalla haalarimerkin, joka määräytyy leimojen lukumäärän mukaisesti. Polin approssa suoritusaika on neljä tuntia. Kiertelyn jälkeen suunnataan kohti Club Capitalia, jossa ovat tapahtuman viralliset jatkot. Jatkoille pääsee approlipulla.
+            </p>
+          </div>
         </div>
       </div>
-  </div>
-  <div class="section" id="section6">
-      <div class="container">
+      <div class="section" id="section6">
         <div class="ota-back"></div>
         <div class="aikataulu-overlay"></div>
-        <div class="col-xs-offset-1 col-xs-10">
-            <h3 class="mid2" data-localize="otayht-ieheader">Mikä IE?</h3>
-            <p class="infotext2" data-localize="otayht-ietext">
-              IE eli Isännistö ja Emännistö on AYY:n Teekkarijaoston alla toimiva toimikunta, joka järjestää tapahtumia. IE on perinteisesti ollut toimikunta, johon kuuluu teekkariyhdistysten tapahtumavastaavia. AYY:n myötä teekkareiden vahvistukseksi IE:seen on saatu myös muutama Kylteri ja Taikkilainen. Polin Appro on suurin IE:n yhdessä järjestämä tapahtuma. Koko porukkaa yhdistää innostus sekä antaumuksellinen asenne tapahtumien järjestämiseen luoden hauskanpidon puitteet kaikille.
-            </p>
-            <h3 class="mid2" data-localize="otayht-header">Ota yhteyttä</h3>
-            <p class="infotext2" data-localize="otayht-text">
-              Onko kysyttävää tai muuta mietittävää? Ota yhteyttä toimikunnan puheenjohtajaan IE-tirehtööriin sähköpostilla: joanna.haahti@ayy.fi
-            </p>
-            <p class="infotext2" data-localize="otayht-facebook">
-              Tapahtuma <a href="http://vituttaa.paitsiossa.com">Facebookissa</a>
-            </p>
-        </div>
+          <div class="container slide">
+            <div class="col-xs-offset-1 col-xs-10">
+              <h3 class="mid2" data-localize="otayht-ieheader">Mikä IE?</h3>
+              <p class="infotext2" data-localize="otayht-ietext">
+                IE eli Isännistö ja Emännistö on AYY:n Teekkarijaoston alla toimiva toimikunta, joka järjestää tapahtumia. IE on perinteisesti ollut toimikunta, johon kuuluu teekkariyhdistysten tapahtumavastaavia. AYY:n myötä teekkareiden vahvistukseksi IE:seen on saatu myös muutama Kylteri ja Taikkilainen. Polin Appro on suurin IE:n yhdessä järjestämä tapahtuma. Koko porukkaa yhdistää innostus sekä antaumuksellinen asenne tapahtumien järjestämiseen luoden hauskanpidon puitteet kaikille.
+              </p>
+              <p class="infotext2" data-localize="otayht-facebook">
+                Tapahtuma <a href="http://vituttaa.paitsiossa.com">Facebookissa</a>
+              </p>
+            </div>
+          </div>
+          <div class="container slide">
+            <div class="col-xs-offset-1 col-xs-10">
+              <h3 class="mid2" data-localize="otayht-header">Ota yhteyttä</h3>
+              <p class="infotext2" data-localize="otayht-text">
+                Onko kysyttävää tai muuta mietittävää? Ota yhteyttä toimikunnan puheenjohtajaan IE-tirehtööriin sähköpostilla: joanna.haahti@ayy.fi
+              </p>
+              <p class="infotext2" data-localize="otayht-facebook">
+                Tapahtuma <a href="http://vituttaa.paitsiossa.com">Facebookissa</a>
+              </p>
+            </div>
+          </div>
+        <p class="footer">haluaisin kiittää pirkka-olutta vankumattomasta tuesta tämän projetkin aikana</p>
       </div>
-      <p class="footer">haluaisin kiittää pirkka-olutta vankumattomasta tuesta tämän projetkin aikana</p>
-  </div>
-  </div>
 
+  </body>
 
-
-
-</body>
-
-</html>
+  </html>

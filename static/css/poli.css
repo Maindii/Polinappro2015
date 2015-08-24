@@ -214,7 +214,7 @@ a, a:hover, a:visited, a:active, a:focus {
     padding-left: 20px;
     height: 120%;
     width:auto;
-} 
+}
 
 .animated {
     -webkit-animation-duration: 2s;
@@ -247,14 +247,6 @@ a, a:hover, a:visited, a:active, a:focus {
     animation-name: bounce;
 }
 
-
-.map {
-
-	width:70vw;
-	margin-left: 10vw;
-	height:70vh;
-
-}
 
 .mid {
 	font-size: 9vh;
@@ -403,6 +395,13 @@ a, a:hover, a:visited, a:active, a:focus {
     bottom: 1vh;
 }
 
+.map {
+  width:40vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  height:70vh;
+}
+
 .disclaimer {
     margin-top: 10vh;
 }
@@ -411,10 +410,15 @@ a, a:hover, a:visited, a:active, a:focus {
 
 @media only screen and (min-width : 320px) and (max-width : 600px)
 {
-    .mobileHide {
-    display: none;
-    }
 
+    .map {
+      width:70vw;
+      margin-left: 10vw;
+      height:70vh;
+  }
+    .mobileHide {
+      display: none;
+    }
     .mobilesplash {
         margin-top: 40vh;
         font-family: hollywood;
@@ -504,7 +508,7 @@ a, a:hover, a:visited, a:active, a:focus {
         0%, 100% {transform: rotateZ(0deg);}
         50% {transform: rotateZ(-25deg);}
     }
-    @media  only screen and (min-device-pixel-ratio: 2),
+    @media only screen and (min-device-pixel-ratio: 2),
         only screen and (min-resolution: 192dpi) {
     /* Style Rules */
       .mid {
