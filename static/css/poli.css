@@ -11,8 +11,12 @@ body {
 }
 
 .logoimg {
-    margin-top: 1vh;
+    margin-top: 3vh;
     width:100%;
+}
+
+.facebooklink {
+    color:blue;
 }
 
 .navbar .nav,
@@ -348,6 +352,17 @@ a, a:hover, a:visited, a:active, a:focus {
 .muuta2-back {
     position: absolute;
     background-image: url("../../static/images/muut2.jpg");
+    background-size: cover;
+    width:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    height: 100%;
+}
+
+.ie-back {
+    position: absolute;
+    background-image: url("../../static/images/studio.jpg");
     background-size: cover;
     width:100%;
     top:0;
