@@ -30,7 +30,7 @@ $(document).ready(function() {
   var opts = {pathPrefix: "static/langs", skipLanguage: /^en/};
   $("[data-localize]").localize("site", opts);
   $('#fullpage').fullpage({
-    anchors: ['splash', 'yleista', 'liput', 'aikataulu', 'kartta', 'appro', 'appro2', 'muuta'],
+    anchors: ['splash', 'yleista', 'liput', 'lipunmyynti', 'aikataulu', 'kartta', 'appro', 'appro2', 'ie', 'muuta'],
     menu: '#munMenu',
     lockAnchors: true,
     scrollingSpeed: 1000,
