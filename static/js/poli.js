@@ -1,10 +1,3 @@
-jQuery(function($) {
-    // Asynchronously Load the map API
-    var script = document.createElement('script');
-    script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
-    document.body.appendChild(script);
-});
-
 function localize(lang) {
   var opts = {pathPrefix: "static/langs", language: lang};
   switch(lang){
@@ -59,7 +52,7 @@ $(document).ready(function() {
     afterLoad: function(anchorLink, index){
       if(!mapOn && index == 5){
         mapOn=true;
-        //initialize();
+        initialize();
       }
     },
     afterRender: function(){
