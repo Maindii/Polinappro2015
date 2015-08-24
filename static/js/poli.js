@@ -39,7 +39,7 @@ $(document).ready(function() {
     lockAnchors: true,
     scrollingSpeed: 1000,
     recordHistory: false,
-//    fixedElements: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '.fixedElesMobile' : '.fixedEles',
+    fixedElements: (/*@cc_on!@*/false || !!document.documentMode) ? '.fixedEles' : null,
     normalScrollElements: "#map",
     onLeave: function(index, nextIndex, direction){
       if(nextIndex == 1 && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
@@ -50,7 +50,7 @@ $(document).ready(function() {
       }
     },
     afterLoad: function(anchorLink, index){
-      if(!mapOn && index == 5){
+      if(!mapOn && index == 6){
         mapOn=true;
         initialize();
       }
