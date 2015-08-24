@@ -35,6 +35,7 @@ $(document).ready(function() {
     lockAnchors: true,
     scrollingSpeed: 1000,
     recordHistory: false,
+//    fixedElements: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '.fixedElesMobile' : '.fixedEles',
     normalScrollElements: "#map",
     onLeave: function(index, nextIndex, direction){
       if(nextIndex == 1){
@@ -50,6 +51,11 @@ $(document).ready(function() {
         //initialize();
       }
     },
+    afterRender: function(){
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        $.fn.fullpage.setAutoScrolling(false);
+      }
+    }
   });
 
 $(".navbar").hide();
