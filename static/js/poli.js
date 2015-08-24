@@ -10,6 +10,7 @@ var hour_text = " tuntia ";
 var minute_text = " minuuttia ";
 var seconds_text = " sekuntia ";
 
+
 function localize(lang) {
   var opts = {pathPrefix: "static/langs", language: lang};
   switch(lang){
@@ -76,7 +77,7 @@ $(document).ready(function() {
     afterLoad: function(anchorLink, index){
       if(!mapOn && index == 5){
         mapOn=true;
-        //initialize();
+        initialize();
       }
     },
     afterRender: function(){
