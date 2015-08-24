@@ -283,6 +283,7 @@ a, a:hover, a:visited, a:active, a:focus {
 
 .infotext {
 	font-size: 25px;
+    font-weight:550; 
   	font-family:Quicksand;
   	color: white;
 	-moz-text-shadow: 0 0 5px #fff;
@@ -293,6 +294,7 @@ a, a:hover, a:visited, a:active, a:focus {
 
 .infotext2 {
     font-size: 25px;
+    font-weight:550;
     font-family:Quicksand;
     color: white;
     -moz-text-shadow: 0 0 5px #fff;
@@ -474,10 +476,12 @@ a, a:hover, a:visited, a:active, a:focus {
 
     .infotext {
         font-size: 2vh;
+        font-weight:normal;
     }
 
     .infotext2 {
         font-size: 2vh;
+        font-weight:normal;
     }
 
 
@@ -554,11 +558,13 @@ a, a:hover, a:visited, a:active, a:focus {
       }
 
       .infotext {
-          font-size: 14px;
+        font-weight:normal;
+        font-size: 14px;
       }
 
       .infotext2 {
           font-size: 14px;
+          font-weight:normal;
       }
     }
 
