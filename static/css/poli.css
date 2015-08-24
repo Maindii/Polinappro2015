@@ -428,6 +428,10 @@ a, a:hover, a:visited, a:active, a:focus {
   height:70vh;
 }
 
+#countdown {
+    font-size: 25px;
+}
+
 .disclaimer {
     margin-top: 10vh;
 }
