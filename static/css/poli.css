@@ -11,7 +11,7 @@ body {
 }
 
 .logoimg {
-    margin-top: 4vw;
+    margin-top: 1vw;
     width:100%;
 }
 
@@ -295,9 +295,9 @@ a, a:hover, a:visited, a:active, a:focus {
     font-size: 25px;
     font-family:Quicksand;
     color: white;
-    -moz-text-shadow: 0 0 2px #fff;
-    -webkit-text-shadow: 0 0 2px #fff;
-    text-shadow: 0px 0px 2px #fff;
+    -moz-text-shadow: 0 0 5px #fff;
+    -webkit-text-shadow: 0 0 5px #fff;
+    text-shadow: 0px 0px 5px #fff;
 }
 
 .infotext-ident{
@@ -324,6 +324,17 @@ a, a:hover, a:visited, a:active, a:focus {
 	bottom:0;
 	left:0;
 	height: 100%;
+}
+
+.liput2-back {
+    position: absolute;
+    background-image: url("../../static/images/lipunmyynti.JPG");
+    background-size: cover;
+    width:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    height: 100%;
 }
 
 .aikataulu-back {

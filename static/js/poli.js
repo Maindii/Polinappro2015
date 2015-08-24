@@ -7,6 +7,17 @@ jQuery(function($) {
 
 function localize(lang) {
   var opts = {pathPrefix: "static/langs", language: lang};
+  switch(lang){
+    case "fi":
+      $(".navbar-nav li > a").css("font-size", "300%");
+      break;
+    case "en":
+      $(".navbar-nav li > a").css("font-size", "200%");
+      break;
+    default:
+      $(".navbar-nav li > a").css("font-size", "300%");
+      break;
+  }
   $("[data-localize]").localize("site", opts);
 };
 
