@@ -11,7 +11,12 @@ body {
 }
 
 .logoimg {
+    margin-top: 4vw;
     width:100%;
+}
+
+.facebooklink {
+    color:blue;
 }
 
 .navbar .nav,
@@ -249,7 +254,7 @@ a, a:hover, a:visited, a:active, a:focus {
 
 
 .mid {
-	font-size: 9vh;
+	font-size: 50px;
   	font-family: 'Droid Sans', sans-serif;
   	font-weight: 700;
   	-moz-text-shadow: 0 0 3px #fff;
@@ -258,7 +263,7 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .mid2 {
-	font-size: 7vh;
+	font-size: 40px;
   	font-family: 'Droid Sans', sans-serif;
   	font-weight: 700;
   	-moz-text-shadow: 0 0 3px #fff;
@@ -267,9 +272,8 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .mid3 {
-	margin-left: 1vw;
-	font-size: 5vh;
-	font-size: 5vh;
+	margin-left: 30vw;
+	font-size: 20px;
   	font-family: 'Droid Sans', sans-serif;
   	font-weight: 700;
   	-moz-text-shadow: 0 0 3px #fff;
@@ -278,7 +282,7 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .infotext {
-	font-size: 4vh;
+	font-size: 25px;
   	font-family:Quicksand;
   	color: white;
 	-moz-text-shadow: 0 0 5px #fff;
@@ -288,7 +292,7 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .infotext2 {
-    font-size: 3vh;
+    font-size: 25px;
     font-family:Quicksand;
     color: white;
     -moz-text-shadow: 0 0 2px #fff;
@@ -347,6 +351,17 @@ a, a:hover, a:visited, a:active, a:focus {
 .muuta2-back {
     position: absolute;
     background-image: url("../../static/images/muut2.jpg");
+    background-size: cover;
+    width:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    height: 100%;
+}
+
+.ie-back {
+    position: absolute;
+    background-image: url("../../static/images/studio.jpg");
     background-size: cover;
     width:100%;
     top:0;
