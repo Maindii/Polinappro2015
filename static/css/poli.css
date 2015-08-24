@@ -11,7 +11,7 @@ body {
 }
 
 .logoimg {
-    margin-top: 3vh;
+    margin-top: 4vw;
     width:100%;
 }
 
@@ -254,7 +254,7 @@ a, a:hover, a:visited, a:active, a:focus {
 
 
 .mid {
-	font-size: 9vh;
+	font-size: 5vw;
   	font-family: 'Droid Sans', sans-serif;
   	font-weight: 700;
   	-moz-text-shadow: 0 0 3px #fff;
@@ -263,7 +263,7 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .mid2 {
-	font-size: 7vh;
+	font-size: 4vw;
   	font-family: 'Droid Sans', sans-serif;
   	font-weight: 700;
   	-moz-text-shadow: 0 0 3px #fff;
@@ -273,8 +273,7 @@ a, a:hover, a:visited, a:active, a:focus {
 
 .mid3 {
 	margin-left: 1vw;
-	font-size: 5vh;
-	font-size: 5vh;
+	font-size: 2vw;
   	font-family: 'Droid Sans', sans-serif;
   	font-weight: 700;
   	-moz-text-shadow: 0 0 3px #fff;
@@ -283,7 +282,7 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .infotext {
-	font-size: 4vh;
+	font-size: 2vw;
   	font-family:Quicksand;
   	color: white;
 	-moz-text-shadow: 0 0 5px #fff;
@@ -293,7 +292,7 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .infotext2 {
-    font-size: 3vh;
+    font-size: 2vw;
     font-family:Quicksand;
     color: white;
     -moz-text-shadow: 0 0 2px #fff;
