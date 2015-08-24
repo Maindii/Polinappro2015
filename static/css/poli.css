@@ -254,7 +254,7 @@ a, a:hover, a:visited, a:active, a:focus {
 
 
 .mid {
-	font-size: 5vw;
+	font-size: 50px;
   	font-family: 'Droid Sans', sans-serif;
   	font-weight: 700;
   	-moz-text-shadow: 0 0 3px #fff;
@@ -263,7 +263,7 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .mid2 {
-	font-size: 4vw;
+	font-size: 40px;
   	font-family: 'Droid Sans', sans-serif;
   	font-weight: 700;
   	-moz-text-shadow: 0 0 3px #fff;
@@ -272,8 +272,8 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .mid3 {
-	margin-left: 1vw;
-	font-size: 2vw;
+	margin-left: 30vw;
+	font-size: 20px;
   	font-family: 'Droid Sans', sans-serif;
   	font-weight: 700;
   	-moz-text-shadow: 0 0 3px #fff;
@@ -282,7 +282,7 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .infotext {
-	font-size: 2vw;
+	font-size: 20px;
   	font-family:Quicksand;
   	color: white;
 	-moz-text-shadow: 0 0 5px #fff;
@@ -292,7 +292,7 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .infotext2 {
-    font-size: 2vw;
+    font-size: 20px;
     font-family:Quicksand;
     color: white;
     -moz-text-shadow: 0 0 2px #fff;
