@@ -64,7 +64,6 @@ $(document).ready(function() {
     lockAnchors: true,
     scrollingSpeed: 1000,
     recordHistory: false,
-    fixedElements: (/*@cc_on!@*/false || !!document.documentMode) ? '.fixedEles' : null,
     normalScrollElements: "#map",
     onLeave: function(index, nextIndex, direction){
       if(nextIndex == 1 && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
@@ -81,7 +80,7 @@ $(document).ready(function() {
       }
     },
     afterRender: function(){
-      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (/*@cc_on!@*/false || !!document.documentMode)){
         $.fn.fullpage.setAutoScrolling(false);
       }
     }
