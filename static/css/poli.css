@@ -21,7 +21,7 @@ body {
 }
 
 .facebooklink {
-    color:blue;
+    font-weight: 900;
 }
 
 .navbar .nav,
@@ -430,8 +430,6 @@ a, a:hover, a:visited, a:active, a:focus {
 
 .map {
   width:40vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
   height:70vh;
 }
 
