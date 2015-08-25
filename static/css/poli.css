@@ -15,6 +15,11 @@ body {
     width:100%;
 }
 
+.logoimgmobile {
+    margin-top: 1vw;
+    width:50%;
+}
+
 .facebooklink {
     color:blue;
 }
