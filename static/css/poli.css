@@ -288,7 +288,7 @@ a, a:hover, a:visited, a:active, a:focus {
 
 .infotext {
 	font-size: 25px;
-    font-weight:600; 
+    font-weight:600;
   	font-family:Quicksand;
   	color: white;
 	-moz-text-shadow: 0 0 5px #fff;
@@ -410,6 +410,10 @@ a, a:hover, a:visited, a:active, a:focus {
 	height: 100%;
 }
 
+.baarit {
+  display: none;
+}
+
 .liput-overlay {
 	position: absolute;
 	background-color: black;
@@ -445,12 +449,6 @@ a, a:hover, a:visited, a:active, a:focus {
 
 @media only screen and (min-width : 320px) and (max-width : 600px)
 {
-
-    .map {
-      width:70vw;
-      margin-left: 10vw;
-      height:70vh;
-  }
     .mobileHide {
       display: none;
     }
