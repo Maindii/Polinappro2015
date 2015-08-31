@@ -5,7 +5,7 @@ jQuery(function($) {
     document.body.appendChild(script);
 });
 
-var day_text = " p√§iv√§√§ ";
+var day_text = " p‰iv‰‰ ";
 var hour_text = " tuntia ";
 var minute_text = " minuuttia ";
 var seconds_text = " sekuntia ";
@@ -15,7 +15,7 @@ function localize(lang) {
   var opts = {pathPrefix: "static/langs", language: lang};
   switch(lang){
     case "fi":
-      day_text = " p√§iv√§√§ ";
+      day_text = " p‰iv‰‰ ";
       hour_text = " tuntia ";
       minute_text = " minuuttia ";
       seconds_text = " sekuntia ";
