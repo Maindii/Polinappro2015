@@ -1,3 +1,3 @@
 # Polinappro2015
 
-The site can be found at [u]http://www.polinappro.fi[/u] no eipä oo enää
+The site can be found at ¨~~~http://www.polinappro.fi~~ no eipä oo enää
